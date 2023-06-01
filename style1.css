@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.infos{
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+.titulo{
+    color: white;
+    font-size: 45px;
+    font-family: 'Playfair', serif;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.cuadros{
+    display: flex;
+    align-content: center;
+    width: 100%;
+    margin-top: 70px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+button{
+    background-color: #0B3C50;
+    color: white;
+    border: 0;
+    width: 90px;
+    height:35px;
+}
+
+.info1{
+    margin: 25px;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 30px;
+    height: 350px;
+}
+
+.info1 img{
+    width: 300px;
+    height: 200px;
+    margin: 30px;
+    border-radius: 30px;
+}
+
+.info1 p{
+    font-family: 'Quicksand', sans-serif;
+    justify-content: center;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.info2{
+    margin: 25px;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 30px;
+    height: 350px;
+}
+
+.info2 img{
+    width: 300px;
+    height: 200px;
+    margin: 30px;
+    border-radius: 30px;
+}
+
+.info2 p{
+    font-family: 'Quicksand', sans-serif;
+    justify-content: center;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.info3{
+    margin: 25px;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 30px;
+    height: 350px;
+}
+
+.info3 img{
+    width: 300px;
+    height: 200px;
+    margin: 30px;
+    border-radius: 30px;
+}
+
+.info3 p{
+    font-family: 'Quicksand', sans-serif;
+    justify-content: center;
+    color: black;
+    margin-bottom: 15px;
+}

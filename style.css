@@ -1,0 +1,314 @@
+*{
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top{
+  /* background-color:#B7C842; */
+  height: 45px;
+  width: 100%;
+  display: flex;
+  margin: 20px;
+}
+
+
+.imagen img{
+    width: auto;
+    height: 55px;
+}
+
+.container {
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #103C51;
+    margin: 6px 6px;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+    }
+
+
+.botones {
+  width: 90%;
+  display: flex;
+  justify-content: end;
+  text-decoration: none;      
+}
+
+.boton0{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  width: 220px;
+  height: 50px;
+  text-align:center;
+  background-color: #103C51;
+  font-family: 'Playfair', serif; 
+  border-radius: 5px;
+  border: none;
+}
+
+.boton1{
+  background: #103C51;
+  width: 75px;
+  height: 50px;
+  border: none;
+  padding: 0 10px;
+  margin-left: 3px;
+  margin-right: 3px;
+  align-items: center;
+  border-radius: 5px;
+}
+.boton1 img{
+    height: 35px;
+    width: 35px;
+}
+.container-2{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+span .img{
+  width: 90px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+}
+.container-2 input#search{
+  width: 50px;
+  height: 50px;
+  background: #103c51;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #103C51;
+  padding-left: 35px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  -webkit-transition: width .55s ease;
+  -moz-transition: width .55s ease;
+  -ms-transition: width .55s ease;
+  -o-transition: width .55s ease;
+  transition: width .55s ease;
+}
+
+.container-2 input#search::-webkit-input-placeholder {
+  color: #65737e;
+}
+.container-2 input#search:-moz-placeholder { /* Firefox 18- */
+  color: #65737e;  
+}
+.container-2 input#search::-moz-placeholder {  /* Firefox 19+ */
+  color: #65737e;  
+}
+.container-2 input#search:-ms-input-placeholder {  
+  color: #65737e;  
+}
+
+.container-2 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #4f5b66;
+}
+
+.container-2 input#search:focus, .container-2 input#search:active{
+  outline:none;
+  width: 300px;
+}
+.container-2:hover input#search{
+width: 300px;
+}
+.container-2:hover .icon{
+  color: #93a2ad;
+}
+/* .boton2{
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 5px;
+  align-items: center;
+}
+.boton2 img{
+    height: 35px;
+    width: 35px;
+} */
+
+
+.menu{
+    margin-right: 20px;
+}
+
+
+
+/* MENUUUUUU */
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; 
+}
+
+
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 350px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 30px;
+  text-decoration: none;
+  font-family: 'Playfair', 'serif';
+  font-size: 70px;
+  color: #818181;
+  display: inline; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover { 
+  color: #f1f1f1;
+}
+
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+
+
+/* otros divs de contenido */
+
+.info{
+  background-image: url('./img/Fondo.png');
+  height:100vh;
+  padding: 10 0 50px;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.somos{
+  color: #f2f2f2;
+  background-color: #103C51;
+  border-radius: 0 0 100px;
+  width: 95%;
+  padding: 5px;
+
+}
+.somos h1{
+  font-size: 45px;
+  padding: 0 15px;
+  font-family: 'Playfair', serif;
+  border: 5px;
+}
+
+.somos p{
+  margin: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.abajo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 150px;
+}
+
+
+.ubis{
+  color: #f2f2f2;
+  align-content: center;
+  margin: 45px;
+  justify-content: center;
+  width: 50%;
+
+}
+.ubis h1{
+  font-family: 'Playfair', serif;
+  color: #FEF688;
+}
+
+.ubis a{
+  margin: 20px;
+  color: #f2f2f2;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  cursor:pointer;
+}
+
+.ubis i{
+  height: 30px;
+  width: 20px;
+  margin: 5px;
+}
+
+.horario{
+  color: #f2f2f2;
+  align-content: center;
+  margin: 45px;
+  justify-content: center;
+  width: 50%;
+  border-right: 2px solid #FEF688;
+
+}
+
+.horario h1{
+  font-family: 'Playfair', serif;
+  color: #FEF688;
+}
